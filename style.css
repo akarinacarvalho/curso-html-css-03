@@ -1,3 +1,21 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto: #000000;
+    --subtitulo: #ffffff;
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
