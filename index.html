@@ -9,61 +9,106 @@
 </head>
 
 <body>
-  <section class="container">
-    <h1 class="texto-grande cor-primaria mb-2">Docinhos Veganos</h1>
-    <div class="flex gap-60">
-      <div>
-        <h2 class="texto-grande">Brigadeiro</h2>
-        <p class="texto-medio cor-cinza mb-1">Texto descritivo.</p>
-        <a href="./" class="btn">Encomendar</a>
-      </div>
-      <div>
-        <h2 class="texto-grande">Cajuzinho</h2>
-        <p class="texto-medio cor-cinza mb-1">Texto descritivo.</p>
-        <a href="./" class="btn">Encomendar</a>
-      </div>
-    </div>
-  </section>
+
+  <main class="hero">
+    <h1 class="title">Docinhos Veganos</h1>
+  </main>
 
   <section>
-    <form action="./">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required>
-      <label for="cpf">CPF</label>
-      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" required>
-      <label for="idade">Quantidade</label>
-      <input type="number" id="idade" name="idade" required>
-      <label for="data">Data de Entrega</label>
-      <input type="date" id="data" name="data" required>
+    <div class="container">
+      <div class="content">
 
-      <div class="checkbox">
-        <input type="checkbox" name="termos" value="aceito">
-        <label for="termos">Aceito os termos de condições.</label>
+        <div class="produtos">
+          <div class="produto">
+            <div class="produto__image">
+              <img src="./img/brigadeiro.svg" alt="">
+            </div>
+            <h2>Brigadeiro</h2>
+            <p>Texto descritivo.</p>
+          </div>
+          <div class="produto">
+            <div class="produto__image">
+              <img src="./img/cajuzinho.svg" alt="">
+            </div>
+            <h2>Cajuzinho</h2>
+            <p>Texto descritivo.</p>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <form action="./">
+
+            <div class="form__grid">
+              <div class="input--text">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+
+              <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+              </div>
+
+              <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+              </div>
+
+              <div>
+                <label for="idade">Quantidade</label>
+                <input type="number" id="idade" name="idade" required>
+              </div>
+
+              <div>
+                <label for="data">Data de Entrega</label>
+                <input type="date" id="data" name="data" required>
+              </div>
+
+              <div>
+                <label for="pagamento">Pagamento</label>
+                <select name="pagamento" id="pagamento">
+                  <option value="cartaodecredito">Cartão de Crédito</option>
+                  <option value="pix">Pix</option>
+                  <option value="dinheiro">Dinheiro</option>
+                </select>
+              </div>
+
+              <div>
+                <p>Entrega</p>
+                <div class="checkbox">
+                  <input type="radio" name="retirada" value="retirada">
+                  <label for="retirada">Retirar na loja.</label>
+                </div>
+                <div class="checkbox">
+                  <input type="radio" name="entrega" value="retirada">
+                  <label for="entrega">Entrega em casa.</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__footer">
+              <label for="mensagem">Observação</label>
+              <textarea name="mensagem" id="mensagem" rows="2"></textarea>
+            </div>
+
+            <div class="checkbox form__footer">
+              <input type="checkbox" name="termos" value="aceito">
+              <label for="termos">Aceito os termos de condições.</label>
+            </div>
+
+            <div class="form__button">
+              <button>Enviar</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <p>Pagamento</p>
-      <label for="pagamento"></label>
-      <select name="pagamento" id="pagamento">
-        <option value="cartaodecredito">Cartão de Crédito</option>
-        <option value="pix">Pix</option>
-        <option value="dinheiro">Dinheiro</option>
-      </select>
-      <p>Entrega</p>
-      <div class="radio">
-        <input type="radio" name="retirada" value="retirada">
-        <label for="retirada">Retirar na loja.</label>
-      </div>
-      <div class="radio">
-        <input type="radio" name="entrega" value="retirada">
-        <label for="entrega">Entrega em casa.</label>
-      </div>
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" rows="5"></textarea>
-      <button>Enviar</button>
-    </form>
+
+    </div>
   </section>
 </body>
 
