@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #eeeeee;
 }
 
 img {
@@ -20,15 +21,13 @@ html {
   max-width: 1120px;
   margin: 0 auto;
   width: 95%;
-}
-
-.hero {
-  padding: 40px 0;
+  padding: 25px 0;
 }
 
 .title {
   text-align: center;
   font-size: 3rem;
+  color: #56291E;
 }
 
 .content {
@@ -39,11 +38,17 @@ html {
 }
 
 .produto + .produto {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .produto h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 15px 0;
+  color: #47a996;
+}
+
+.produto p {
+  color: #56291E;
 }
 
 .produto__image {
@@ -109,7 +114,7 @@ select {
   border-radius: 0.5rem;
   border: 0;
   background: #6fd1be;
-  color: #27130d;
+  color: #56291E;
   transition: all 0.2s ease-in;
   cursor: pointer;
 }
