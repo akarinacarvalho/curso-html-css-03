@@ -64,6 +64,16 @@ html {
     justify-content: center;
     align-items: center;
   }
+
+  .title {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 
 .formulario {
